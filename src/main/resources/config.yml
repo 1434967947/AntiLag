@@ -1,0 +1,49 @@
+CleanEntity: #掉落物品和实体清理
+    enable: true
+    msg: &b&l成功清理了所有掉落物品
+    EntityList:
+       - Zombie
+       - Skeleton
+       - Creeper
+    Named: false
+    itemWhilelist:
+       - 1
+       - 2
+    worlds: #清理的世界
+       - world
+       - world_nether
+    sleep: 1800
+
+Redstone:
+    enable: true
+    drop: true #是否掉落清理物
+    checktime: 5 #单位秒
+    cleanThreshold: 10 #checktime的秒内可以闪多少次红石
+
+NoBoom: true
+##是否开启防爆功能
+SpawnbyMan:
+   egg:
+      radius: 8 #检测半径
+      limit: 4 #实体上限
+      broadcase: "&b此处实体数量达到上限，无法使用鸡蛋继续生成鸡"
+   breeding:
+      radius: 8
+      limit: 4
+      broadcase: "&b此处实体数量达到上限，动物变得不孕不育了"
+Chunk:
+   enable: true
+   ChunkGctime: 30
+   ChunkWorldList:
+     - World
+     - world_nether
+   EntityLimit: 3
+   #到达这个数值就不在生成实体了
+   EntityWhitelist:
+     - Villager
+     - Zombie
+     #无视的实体
+Bugs:
+  UnlimitRail: true
+  UnlimitItem: true
+  AnitMinecraftPortal: true
