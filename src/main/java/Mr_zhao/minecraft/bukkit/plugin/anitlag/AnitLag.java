@@ -1,5 +1,6 @@
 package Mr_zhao.minecraft.bukkit.plugin.anitlag;
 
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads.AnitLagThreads;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads.ChunkUnloadThread;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads.ClearLagThread;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads.RedstoneCleaner;
@@ -34,12 +35,11 @@ public static  Config cfg;
 cfg=new Config(this);
         plugin=this;
         if(getConfig().getBoolean("Redstone.enable")){
-            red=new RedstoneCleaner(this);
-            red.start();
-
+            runTimer(new RedstoneCleaner(this),getCfg().getRedStoneChecktime());
+//;
         }
         if(getConfig().getBoolean("CleanEntity.enable")){
-            new ClearLagThread(this).start();
+            runTimer(new ClearLagThread(this),getConfig().getInt("CleanEntity.sleep")*20);
         }
         if(getConfig().getBoolean("NoBoom")){
             reg(new ExplodedListener(this));
@@ -48,7 +48,8 @@ cfg=new Config(this);
             reg(new ManMadeSpawnListener(this));
         }
         if(getConfig().getBoolean("Chunk.enable")){
-            new ChunkUnloadThread(this).start();
+
+            runTimer(new ChunkUnloadThread(this),getCfg().getChunkUnloadDelay());
             reg(new ChunkEntityListener(this));
         }
         if(getConfig().getBoolean("Bugs.UnlimitRail")){
@@ -63,7 +64,9 @@ cfg=new Config(this);
 
 
     }
-
+    private void runTimer(AnitLagThreads run,long time){
+        Bukkit.getScheduler().runTaskTimer(this,run,0,time);
+    }
     public static Config getCfg(){
         return cfg;
     }

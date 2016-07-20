@@ -18,7 +18,6 @@ public class RedstoneCleaner extends  AnitLagThreads{
     public RedstoneCleaner(AnitLag plugin) {
         super(plugin);
         cache=new HashMap<Location,Integer>();
-        sleepTime=getCfg().getRedStoneChecktime();
         clean=getCfg().getRedStoneCleanThreshold();
     }
     public void count(Location loc){
@@ -26,7 +25,6 @@ public class RedstoneCleaner extends  AnitLagThreads{
     }
     @Override
     public void run(){
-while (true){
     if(getCfg().getRedStoneShouldDrop()){
 
         for (Location loc:cache.keySet()){
@@ -49,13 +47,8 @@ while (true){
             }
 
         }
-    }
-    try {
-        sleep(sleepTime*50);
-    } catch (InterruptedException e) {
-        getPlugin().getLogger().info("红石清理线程出现严重错误");
-        e.printStackTrace();
-    }
+
+
 }
     }
 }

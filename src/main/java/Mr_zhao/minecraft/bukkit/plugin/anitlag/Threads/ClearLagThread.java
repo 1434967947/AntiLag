@@ -43,24 +43,9 @@ public class ClearLagThread extends AnitLagThreads {
 
     @Override
     public  void  run(){
-        while (true){
-
 
             cleanEntitys(getCfg().getWorlds());
             Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&',getPlugin().getConfig().getString("CleanEntity.msg")));
-            try {
-                sleep(getPlugin().getConfig().getInt("CleanEntity.sleep")*1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-
-        }
-
-
-
-
-
 
 
     }

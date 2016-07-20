@@ -86,7 +86,7 @@ public class Config {
         return cfg.getStringList("Chunk.ChunkWorldList");
     }
     public long getChunkUnloadDelay(){
-        return cfg.getInt("Chunk.ChunkGctime")*1000;
+        return cfg.getInt("Chunk.ChunkGctime")*20;
     }
     /*
     Redstone:

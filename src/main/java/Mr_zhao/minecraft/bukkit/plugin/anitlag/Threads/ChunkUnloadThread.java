@@ -16,7 +16,7 @@ public class ChunkUnloadThread extends AnitLagThreads{
     }
     @Override
     public void run(){
-while (true){
+
     for(String s:getCfg().getChunkUnloadWorld()){
         World w= Bukkit.getWorld(s);
         if(w!=null)
@@ -24,12 +24,8 @@ while (true){
                 c.unload();
             }
     }
-    try {
-        sleep(getCfg().getChunkUnloadDelay());
-    } catch (InterruptedException e) {
 
-    }
-}
+
 
     }
 }
