@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33175a79-8f6a-4c0b-b48f-0de612b82897" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/ItemPortal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AutoRespawnLIstener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AnitLag.java" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AnitLag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/UnlimitItems.java" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/UnlimitItems.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/configuration/Config.java" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/configuration/Config.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.yml" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" />
     </list>
     <ignored path="AntiLag.iws" />
@@ -72,9 +69,10 @@
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/RedstoneCleaner.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/ItemPortal.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/configuration/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AnitLag.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/UnlimitItems.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AutoRespawnLIstener.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AnitLag.java" />
       </list>
     </option>
   </component>
@@ -91,8 +89,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="348" />
-    <option name="y" value="387" />
+    <option name="x" value="383" />
+    <option name="y" value="107" />
     <option name="width" value="1356" />
     <option name="height" value="636" />
   </component>
@@ -879,7 +877,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="348" y="387" width="1356" height="636" extended-state="0" />
+    <frame x="383" y="107" width="1356" height="636" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1178,18 +1176,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AnitLag.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AutoRespawnLIstener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="64" column="60" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="225">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AnitLag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
           <folding />
         </state>
       </provider>

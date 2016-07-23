@@ -9,6 +9,7 @@ import Mr_zhao.minecraft.bukkit.plugin.anitlag.bugs.listener.MinecraftPortal;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.bugs.listener.Rail;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.bugs.listener.UnlimitItems;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.configuration.Config;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners.AutoRespawnLIstener;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners.ChunkEntityListener;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners.ExplodedListener;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners.ManMadeSpawnListener;
@@ -64,6 +65,9 @@ cfg=new Config(this);
         }
         if(getConfig().getBoolean("Bugs.AskyblockUnlimitItem")){
             reg(new ItemPortal(this));
+        }
+        if(getConfig().getBoolean("AutoRespawn")){
+            reg(new AutoRespawnLIstener(this));
         }
 
 

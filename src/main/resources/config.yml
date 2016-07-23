@@ -1,3 +1,4 @@
+AutoRespawn: true ##是否自动重生,可能需要spigot
 CleanEntity: #掉落物品和实体清理
     enable: true
     msg: &b&l成功清理了所有掉落物品
