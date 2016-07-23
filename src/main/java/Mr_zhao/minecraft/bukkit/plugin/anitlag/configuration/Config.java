@@ -78,6 +78,7 @@ public class Config {
     public boolean getWheaterCleanNamed(){
         return cfg.getBoolean("CleanEntity.Named");
     }
+
     public List<String > getEntityList(){
 
         return cfg.getStringList("CleanEntity.EntityWhitelist");

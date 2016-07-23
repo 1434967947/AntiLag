@@ -44,6 +44,7 @@ Chunk:
      - Zombie
      #无视的实体
 Bugs:
-  UnlimitRail: true
-  UnlimitItem: true
-  AnitMinecraftPortal: true
+  UnlimitRail: true #是否修复铁轨bug
+  UnlimitItem: true #是否修复负数物品bug
+  AnitMinecraftPortal: true #是否修复矿车刷物品bug
+  AskyblockUnlimitItem: true #是否修复空岛插件的双倍物品bug

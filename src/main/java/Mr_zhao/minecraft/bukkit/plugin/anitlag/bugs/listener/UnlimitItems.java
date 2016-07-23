@@ -22,11 +22,11 @@ public class UnlimitItems extends AnitLagListener{
     public void onPlayerInteract(PlayerInteractEvent e){
         ItemStack item0=e.getPlayer().getInventory().getItemInMainHand();
         ItemStack item1=e.getPlayer().getInventory().getItemInOffHand();
-         if(item0!=null&&item0.getAmount()==-1){
+         if(item0!=null&&item0.getAmount()<0){
              item0.setAmount(1);
              e.getPlayer().getInventory().setItemInMainHand(item0);
          }
-        if(item1!=null&&item1.getAmount()==-1){
+        if(item1!=null&&item1.getAmount()<0){
             item1.setAmount(1);
             e.getPlayer().getInventory().setItemInMainHand(item1);
         }

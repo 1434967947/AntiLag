@@ -4,6 +4,7 @@ import Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads.AnitLagThreads;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads.ChunkUnloadThread;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads.ClearLagThread;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads.RedstoneCleaner;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.bugs.listener.ItemPortal;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.bugs.listener.MinecraftPortal;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.bugs.listener.Rail;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.bugs.listener.UnlimitItems;
@@ -60,6 +61,9 @@ cfg=new Config(this);
         }
         if(getConfig().getBoolean("Bugs.AnitMinecraftPortal")){
             reg(new MinecraftPortal(this));
+        }
+        if(getConfig().getBoolean("Bugs.AskyblockUnlimitItem")){
+            reg(new ItemPortal(this));
         }
 
 
