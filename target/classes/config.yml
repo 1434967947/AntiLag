@@ -1,9 +1,44 @@
+Portal:
+   enable: true
+   break: true
+   command: "/spawn"
+GC: true #是否开启内存释放
+GCtime: 3 #单位小时
+Spam: #禁止刷屏
+   enable: true
+   rude:
+     - "擦"   #脏话词
+     - "我擦"
+     - "群"
+     - shit
+   serverformat: "[(\w+\.)\w]" #如果语句符合这个表达式判断脏话
+   chatCooldown: 1 #多少秒可以说一次话
+   commandCooldown: 3 #多少秒可以打一次指令
+AnitGamemode: false #是否防御非法创造
+gamemodeban: false #false只是取消创造，true则是封禁
+CreateList:
+     - Mr_zhao # 允许有创造的白名单，需要上面开启才能生效
+     - fuzhu
+SuperBan: true #是否开启超级封禁
+SuperBanList:
+   - SB
+   - "熊孩纸"
+SuperBanIp:
+   - 233.233.233.233
+AutoRespawn: true ##是否自动重生,可能需要spigot
+AnitOp: ##是否禁止非法op
+    enable: false
+    check: 2 #检测时间白名单
+    ops:
+      - Mr_zhao #op
+      - 143
+    Superban: true
 CleanEntity: #掉落物品和实体清理
     enable: true
     msg: "&b&l成功清理了所有掉落物品"
     EntityList:
        - Zombie
-       - Skeleton
+       - Skeleton #实体白名单
        - Creeper
     Named: false
     itemWhilelist:
@@ -19,7 +54,10 @@ Redstone:
     drop: true #是否掉落清理物
     checktime: 5 #单位秒
     cleanThreshold: 10 #checktime的秒内可以闪多少次红石
-
+AntiRobot: true #是否开启防御假人攻击
+robotLimit: 5 #阀值
+AntiMotdPing: true #是否开启防御motd攻击
+motdLimit: 3
 NoBoom: true
 ##是否开启防爆功能
 SpawnbyMan:
@@ -44,6 +82,7 @@ Chunk:
      - Zombie
      #无视的实体
 Bugs:
-  UnlimitRail: true
-  UnlimitItem: true
-  AnitMinecraftPortal: true
+  UnlimitRail: true #是否修复铁轨bug
+  UnlimitItem: true #是否修复负数物品bug
+  AnitMinecraftPortal: true #是否修复矿车刷物品bug
+  AskyblockUnlimitItem: true #是否修复空岛插件的双倍物品bug

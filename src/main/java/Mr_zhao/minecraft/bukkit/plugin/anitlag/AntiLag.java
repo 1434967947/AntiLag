@@ -54,6 +54,9 @@ cfg=new Config(this);
         rob=new HashMap<String, Integer>();
         cmdc=new ArrayList<String>();
         chatc=new ArrayList<String>();
+        if(getConfig().getBoolean("Portal.enable")){
+            reg(new AntiPortal(this));
+        }
         if(getConfig().getBoolean("GC")){
             runTimer(new Runnable() {
                 public void run() {

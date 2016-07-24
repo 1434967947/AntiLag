@@ -1,3 +1,7 @@
+Portal:
+   enable: true
+   break: true
+   command: "/spawn"
 GC: true #是否开启内存释放
 GCtime: 3 #单位小时
 Spam: #禁止刷屏
@@ -7,7 +11,7 @@ Spam: #禁止刷屏
      - "我擦"
      - "群"
      - shit
-   serverformat: [(\w+\.)\w] #如果语句符合这个表达式判断脏话
+   serverformat: "[(\w+\.)\w]" #如果语句符合这个表达式判断脏话
    chatCooldown: 1 #多少秒可以说一次话
    commandCooldown: 3 #多少秒可以打一次指令
 AnitGamemode: false #是否防御非法创造
@@ -31,7 +35,7 @@ AnitOp: ##是否禁止非法op
     Superban: true
 CleanEntity: #掉落物品和实体清理
     enable: true
-    msg: &b&l成功清理了所有掉落物品
+    msg: "&b&l成功清理了所有掉落物品"
     EntityList:
        - Zombie
        - Skeleton #实体白名单
