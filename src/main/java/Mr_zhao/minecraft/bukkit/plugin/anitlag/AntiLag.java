@@ -27,6 +27,7 @@ public static  Config cfg;
     public static HashMap<String,Integer> rob;
     public static RedstoneCleaner red;
     public static HashMap<String,Integer> mot;
+    public static HashMap<String,String> chatcache;
     public static AntiLag plugin;
     private  boolean b=false;
     public static List<String> cmdc;
@@ -50,6 +51,7 @@ public static  Config cfg;
     public void onEnable(){
     this.saveDefaultConfig();
 cfg=new Config(this);
+        chatcache=new HashMap<String, String>();
         plugin=this;
         rob=new HashMap<String, Integer>();
         cmdc=new ArrayList<String>();
@@ -167,6 +169,7 @@ cfg=new Config(this);
         chatc=null;
         mot=null;
         rob=null;
+        chatcache=null;
         System.gc();
     }
     public void run() {

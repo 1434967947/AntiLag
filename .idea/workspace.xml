@@ -2,42 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33175a79-8f6a-4c0b-b48f-0de612b82897" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/CheckOpersThread.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/ItemPortal.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiCreate.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiMotd.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiPortal.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiRobot.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AutoRespawnLIstener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/OnPlayerLogin.class" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/AnitLag.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AnitLagListener.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiLagListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/AnitLagThreads.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/AnitLagThreads.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/ChunkUnloadThread.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/ChunkUnloadThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/ClearLagThread.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/ClearLagThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/RedstoneCleaner.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/RedstoneCleaner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/MinecraftPortal.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/MinecraftPortal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/Rail.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/Rail.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/UnlimitItems.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/UnlimitItems.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/configuration/Config.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/configuration/Config.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/ChunkEntityListener.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/ChunkEntityListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/ExplodedListener.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/ExplodedListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/ManMadeSpawnListener.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/ManMadeSpawnListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiPortal.java" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiPortal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.yml" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config.yml" afterPath="$PROJECT_DIR$/target/classes/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/plugin.yml" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" />
     </list>
     <ignored path="AntiLag.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,7 +29,51 @@
     <favorites_list name="AntiLag" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AntiSpam.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="38" column="142" selection-start-line="38" selection-start-column="142" selection-end-line="38" selection-end-column="142" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AntiLag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1980">
+              <caret line="171" column="23" selection-start-line="171" selection-start-column="23" selection-end-line="171" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/configuration/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1245">
+              <caret line="130" column="27" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="27" />
+              <folding>
+                <element signature="e#4084#4085#0" expanded="true" />
+                <element signature="e#4142#4143#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -109,15 +123,15 @@
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/CoolDownCounter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AnitLag.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/configuration/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiCreate.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/OnPlayerLogin.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiMotd.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiRobot.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiPortal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
       </list>
     </option>
   </component>
@@ -134,10 +148,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="335" />
-    <option name="y" value="77" />
-    <option name="width" value="1346" />
-    <option name="height" value="575" />
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="697" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -164,8 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -492,7 +504,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -722,31 +735,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="335" y="77" width="1346" height="575" extended-state="0" />
+    <frame x="0" y="24" width="1366" height="697" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1812749" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18108974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2473997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24377745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -790,6 +803,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -810,9 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,10 +854,8 @@
         <state relative-caret-position="990">
           <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
           <folding>
-            <element signature="e#3715#3716#0" expanded="false" />
-            <element signature="e#3768#3769#0" expanded="false" />
-            <element signature="e#4084#4085#0" expanded="false" />
-            <element signature="e#4142#4143#0" expanded="false" />
+            <element signature="e#4084#4085#0" expanded="true" />
+            <element signature="e#4142#4143#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -990,7 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,9 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1044,9 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1069,36 +1078,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/CoolDownCounter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/configuration/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="130" column="27" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="27" />
-          <folding>
-            <element signature="e#3715#3716#0" expanded="false" />
-            <element signature="e#3768#3769#0" expanded="false" />
-            <element signature="e#4084#4085#0" expanded="false" />
-            <element signature="e#4142#4143#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiCreate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1117,11 +1100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,33 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,9 +1114,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/configuration/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="130" column="27" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4084#4085#0" expanded="true" />
+            <element signature="e#4142#4143#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="171" column="23" selection-start-line="171" selection-start-column="23" selection-end-line="171" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="38" column="142" selection-start-line="38" selection-start-column="142" selection-end-line="38" selection-end-column="142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
