@@ -1,8 +1,7 @@
 package Mr_zhao.minecraft.bukkit.plugin.anitlag.bugs.listener;
 
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.AnitLag;
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners.AnitLagListener;
-import org.bukkit.block.Block;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.AntiLag;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners.AntiLagListener;
 import org.bukkit.block.Dispenser;
 import org.bukkit.block.Dropper;
 import org.bukkit.event.EventHandler;
@@ -14,8 +13,8 @@ import org.bukkit.inventory.ItemStack;
 /**
  * Created by yzh on 16-7-16.
  */
-public class UnlimitItems extends AnitLagListener{
-    public UnlimitItems(AnitLag antiLag) {
+public class UnlimitItems extends AntiLagListener {
+    public UnlimitItems(AntiLag antiLag) {
         super(antiLag);
     }
     @EventHandler

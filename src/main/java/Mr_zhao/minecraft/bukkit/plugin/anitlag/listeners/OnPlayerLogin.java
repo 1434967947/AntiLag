@@ -1,6 +1,6 @@
 package Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners;
 
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.AnitLag;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.AntiLag;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.player.PlayerLoginEvent;
@@ -8,9 +8,9 @@ import org.bukkit.event.player.PlayerLoginEvent;
 /**
  * Created by yzh on 16-7-23.
  */
-public class OnPlayerLogin extends  AnitLagListener{
+public class OnPlayerLogin extends AntiLagListener {
 
-    public OnPlayerLogin(AnitLag antiLag) {
+    public OnPlayerLogin(AntiLag antiLag) {
         super(antiLag);
     }
     @EventHandler(priority = EventPriority.HIGHEST)

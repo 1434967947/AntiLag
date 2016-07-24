@@ -1,7 +1,17 @@
+Spam:
+   enable: true
+   rude:
+     - "擦"
+     - "我擦"
+     - "群"
+     - shit
+   serverformat: [(\w+\.)\w]
+   chatCooldown: 1
+   commandCooldown: 3
 SuperBan: true #是否开启超级封禁
 SuperBanList:
    - SB
-   - 熊孩纸
+   - "熊孩纸"
 SuperBanIp:
    - 233.233.233.233
 AutoRespawn: true ##是否自动重生,可能需要spigot

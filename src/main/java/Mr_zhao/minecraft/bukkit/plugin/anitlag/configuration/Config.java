@@ -1,12 +1,11 @@
 package Mr_zhao.minecraft.bukkit.plugin.anitlag.configuration;
 
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.AnitLag;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.AntiLag;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.entity.Entity;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -17,7 +16,7 @@ import java.util.List;
  */
 public class Config {
     private FileConfiguration cfg;
-    public Config(AnitLag a){
+    public Config(AntiLag a){
         try {
             cfg= YamlConfiguration.loadConfiguration(new InputStreamReader(new DataInputStream(new BufferedInputStream(new FileInputStream(new File(a.getDataFolder(),"config.yml")))),"UTF-8"));
         } catch (FileNotFoundException e) {
@@ -115,11 +114,21 @@ public class Config {
           setSuperBanList(l);
       }
     }
+    public List<String> getRudeWords(){
+        return cfg.getStringList("Spam.rude");
+    }
     public void setSuperBanIp(List<String> l){
         cfg.set("SuperBanIpt",l);
     }
     public long getChunkUnloadDelay(){
         return cfg.getInt("Chunk.ChunkGctime")*20;
+    }
+    public double getChatCooldown(){
+
+        return cfg.getLong("Spam.chatCooldown");
+    }
+    public double getCommandCooldown(){
+        return cfg.getLong("Spam.commandCooldown");
     }
     /*
     Redstone:

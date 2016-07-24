@@ -1,17 +1,15 @@
 package Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads;
 
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.AnitLag;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.AntiLag;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.configuration.Config;
-import org.bukkit.Bukkit;
-import org.bukkit.plugin.Plugin;
 
 /**
  * Created by yzh on 16-7-14.
  */
 public abstract class AnitLagThreads implements Runnable{
-    private AnitLag plugin;
+    private AntiLag plugin;
     private Config cfg;
-    public AnitLagThreads(AnitLag plugin)
+    public AnitLagThreads(AntiLag plugin)
     {
         this.plugin=plugin;
         cfg=plugin.getCfg();
@@ -24,7 +22,7 @@ public abstract class AnitLagThreads implements Runnable{
         return  this.cfg;
 
     }
-    protected AnitLag getPlugin(){
+    protected AntiLag getPlugin(){
         return  this.plugin;
 
     }

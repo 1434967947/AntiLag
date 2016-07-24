@@ -1,16 +1,16 @@
 package Mr_zhao.minecraft.bukkit.plugin.anitlag.bugs.listener;
 
 
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.AnitLag;
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners.AnitLagListener;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.AntiLag;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners.AntiLagListener;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.BlockPhysicsEvent;
 
 /**
  * Created by yzh on 16-7-16.
  */
-public class Rail extends AnitLagListener{
-    public Rail(AnitLag antiLag) {
+public class Rail extends AntiLagListener {
+    public Rail(AntiLag antiLag) {
         super(antiLag);
     }
     @EventHandler

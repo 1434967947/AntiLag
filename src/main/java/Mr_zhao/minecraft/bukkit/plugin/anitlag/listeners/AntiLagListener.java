@@ -1,16 +1,16 @@
 package Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners;
 
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.AnitLag;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.AntiLag;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.configuration.Config;
 import org.bukkit.event.Listener;
 
 /**
  * Created by yzh on 16-7-14.
  */
-public class AnitLagListener implements Listener {
+public class AntiLagListener implements Listener {
     private Config cfg;
-    private  AnitLag plugin;
-    public AnitLagListener(AnitLag antiLag){
+    private AntiLag plugin;
+    public AntiLagListener(AntiLag antiLag){
         plugin=antiLag;
         cfg=plugin.getCfg();
     }
@@ -18,7 +18,7 @@ public class AnitLagListener implements Listener {
         return  this.cfg;
 
     }
-    protected AnitLag getPlugin(){
+    protected AntiLag getPlugin(){
         return  this.plugin;
 
     }

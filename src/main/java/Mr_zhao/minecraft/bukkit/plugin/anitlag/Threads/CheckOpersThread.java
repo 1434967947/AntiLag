@@ -1,6 +1,6 @@
 package Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads;
 
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.AnitLag;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.AntiLag;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.OfflinePlayer;
@@ -11,7 +11,7 @@ import java.util.List;
  * Created by yzh on 16-7-23.
  */
 public class CheckOpersThread extends AnitLagThreads {
-    public CheckOpersThread(AnitLag plugin) {
+    public CheckOpersThread(AntiLag plugin) {
         super(plugin);
     }
 

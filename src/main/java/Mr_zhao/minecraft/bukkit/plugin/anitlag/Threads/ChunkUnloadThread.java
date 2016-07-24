@@ -1,6 +1,6 @@
 package Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads;
 
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.AnitLag;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.AntiLag;
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
 import org.bukkit.World;
@@ -11,7 +11,7 @@ import org.bukkit.World;
 public class ChunkUnloadThread extends AnitLagThreads{
 
 
-    public ChunkUnloadThread(AnitLag plugin) {
+    public ChunkUnloadThread(AntiLag plugin) {
         super(plugin);
     }
     @Override

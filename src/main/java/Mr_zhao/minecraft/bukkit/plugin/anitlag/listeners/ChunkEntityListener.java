@@ -1,11 +1,8 @@
 package Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners;
 
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.AnitLag;
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.configuration.Config;
-import org.bukkit.entity.AnimalTamer;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.AntiLag;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
-import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 
 import java.util.List;
@@ -13,10 +10,10 @@ import java.util.List;
 /**
  * Created by yzh on 16-7-14.
  */
-public class ChunkEntityListener extends  AnitLagListener{
+public class ChunkEntityListener extends AntiLagListener {
     private int  entityLimit;
     private List<String> entityWhiteList;
-    public  ChunkEntityListener(AnitLag p){
+    public  ChunkEntityListener(AntiLag p){
         super(p);
         entityLimit=getCfg().getChunkEntitySpawnLimit();
         entityWhiteList=getCfg().getChunkEntitySpawnWhileList();

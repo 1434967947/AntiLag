@@ -11,24 +11,23 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
+import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by yzh on 16-7-14.
  */
-public class AnitLag extends JavaPlugin  {
+public class AntiLag extends JavaPlugin  {
 public static  Config cfg;
     public static RedstoneCleaner red;
-    public static AnitLag plugin;
+    public static AntiLag plugin;
     private  boolean b=false;
+    public static List<String> cmdc;
+    public static List<String> chatc;
     public static  RedstoneCleaner getRedstoneThread(){
         return red;
     }
@@ -40,9 +39,11 @@ public static  Config cfg;
     this.saveDefaultConfig();
 cfg=new Config(this);
         plugin=this;
+        cmdc=new ArrayList<String>();
+        chatc=new ArrayList<String>();
         if(getConfig().getBoolean("AnitOp.enable")){
             b=true;
-            runTimer(new CheckOpersThread(this),getConfig().getLong("AnitOp.check"));
+            runTimer(new CheckOpersThread(this),getConfig().getLong("AnitOp.check")*20);
         }
         if(getConfig().getBoolean("SuperBan")){
             reg(new OnPlayerLogin(this));
@@ -80,10 +81,25 @@ cfg=new Config(this);
         if(getConfig().getBoolean("AutoRespawn")){
             reg(new AutoRespawnLIstener(this));
         }
-
+        if(getConfig().getBoolean("Spam.enable")){
+            reg(new AntiSpam(this));
+            runTimer(new Runnable(){
+                public void run() {
+                    count(AntiLag.chatc);
+                }
+            }, (long) (getCfg().getChatCooldown()*20));
+            runTimer(new Runnable(){
+                public void run() {
+                    count(AntiLag.cmdc);
+                }
+            }, (long) (getCfg().getCommandCooldown()*20));
+        }
 
     }
     private void runTimer(AnitLagThreads run,long time){
+        Bukkit.getScheduler().runTaskTimer(this,run,0,time);
+    }
+    private void runTimer(Runnable run,long time){
         Bukkit.getScheduler().runTaskTimer(this,run,0,time);
     }
     public static Config getCfg(){
@@ -91,9 +107,28 @@ cfg=new Config(this);
     }@Override
     public void onDisable(){
         saveConfig();
+        cmdc=null;
+        chatc=null;
+    }
+    public void run() {
+
+        count(AntiLag.cmdc);
+
+    }
+    private void count(List<String > a){
+        a.clear();
+        a=null;
+        a=new ArrayList<String>();
     }
 @Override
 public boolean onCommand(final CommandSender sender, Command command, String label, String[] args) {
+    if(cmdc.contains(sender.getName())){
+       sender.sendMessage("你打指令太快了");
+        return true;
+    }
+    if(sender instanceof Player&&!sender.hasPermission("lag.Spam")){
+        cmdc.add(sender.getName());
+    }
   if(command.getName().equals("lagr")){
         if(sender.hasPermission("lag.reload")){
             reloadConfig();

@@ -1,21 +1,19 @@
 package Mr_zhao.minecraft.bukkit.plugin.anitlag.Threads;
 
-import Mr_zhao.minecraft.bukkit.plugin.anitlag.AnitLag;
+import Mr_zhao.minecraft.bukkit.plugin.anitlag.AntiLag;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Item;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 /**
  * Created by yzh on 16-7-14.
  */
 public class ClearLagThread extends AnitLagThreads {
-    public ClearLagThread(AnitLag plugin) {
+    public ClearLagThread(AntiLag plugin) {
         super(plugin);
     }
     private void cleanEntitys(Collection<World> worlds){
