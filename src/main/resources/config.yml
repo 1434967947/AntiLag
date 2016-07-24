@@ -48,7 +48,8 @@ Redstone:
     drop: true #是否掉落清理物
     checktime: 5 #单位秒
     cleanThreshold: 10 #checktime的秒内可以闪多少次红石
-
+AntiRobot: true #是否开启防御假人攻击
+robotLimit: 5 #阀值
 NoBoom: true
 ##是否开启防爆功能
 SpawnbyMan:

@@ -16,6 +16,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -23,6 +24,7 @@ import java.util.List;
  */
 public class AntiLag extends JavaPlugin  {
 public static  Config cfg;
+    public static HashMap<String,Integer> rob;
     public static RedstoneCleaner red;
     public static AntiLag plugin;
     private  boolean b=false;
@@ -34,13 +36,38 @@ public static  Config cfg;
     private void reg(Listener l){
         Bukkit.getPluginManager().registerEvents(l,this);
     }
+    public static void addCount(String ip){
+        if(rob.containsKey(ip)){
+            int i=rob.get(ip)+1;
+            rob.put(ip,i);
+        }else {
+            rob.put(ip,1);
+        }
+    }
+
     @Override
     public void onEnable(){
     this.saveDefaultConfig();
 cfg=new Config(this);
         plugin=this;
+        rob=new HashMap<String, Integer>();
         cmdc=new ArrayList<String>();
         chatc=new ArrayList<String>();
+        if(getConfig().getBoolean("AntiRobot")){
+            reg(new AntiRobot(this));
+            runTimer(new Runnable() {
+                public void run() {
+                    for(String s:rob.keySet()){
+                        int i=rob.get(s);
+                        if(i==0){
+                            rob.remove(s);
+                            continue;
+                        }
+                        rob.put(s,i-1);
+                    }
+                }
+            },5*20);
+        }
         if(getConfig().getBoolean("AnitGamemode")){
             reg(new AntiCreate(this));
         }
@@ -112,6 +139,8 @@ cfg=new Config(this);
         saveConfig();
         cmdc=null;
         chatc=null;
+        rob=null;
+        System.gc();
     }
     public void run() {
 

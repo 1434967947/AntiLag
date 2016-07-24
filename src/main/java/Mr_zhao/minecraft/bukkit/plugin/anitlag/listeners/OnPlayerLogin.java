@@ -18,11 +18,11 @@ public class OnPlayerLogin extends AntiLagListener {
         String ip=e.getAddress().getHostAddress();
         if(getCfg().getSuperBanIp().contains(ip)){
             getCfg().addBanList(e.getPlayer().getName());
-            e.setResult(PlayerLoginEvent.Result.KICK_BANNED);
+            e.disallow(PlayerLoginEvent.Result.KICK_BANNED,"你的ip已经被封禁");
             return;
         }
         if(getCfg().getSuperBanList().contains(e.getPlayer().getName())){
-            e.setResult(PlayerLoginEvent.Result.KICK_BANNED);
+            e.disallow(PlayerLoginEvent.Result.KICK_BANNED,"你已经被封禁");
             getCfg().addBanip(e.getAddress().getHostAddress());
             return;
         }
