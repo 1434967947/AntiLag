@@ -1,4 +1,17 @@
+SuperBan: true #是否开启超级封禁
+SuperBanList:
+   - SB
+   - 熊孩纸
+SuperBanIp:
+   - 233.233.233.233
 AutoRespawn: true ##是否自动重生,可能需要spigot
+AnitOp: ##是否禁止非法op
+    enable: false
+    check: 2 #检测时间白名单
+    ops:
+      - Mr_zhao #op
+      - 143
+    Superban: true
 CleanEntity: #掉落物品和实体清理
     enable: true
     msg: &b&l成功清理了所有掉落物品

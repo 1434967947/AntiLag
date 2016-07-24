@@ -1,3 +1,7 @@
 main: Mr_zhao.minecraft.bukkit.plugin.anitlag.AntiLag
 version: 1.0.0
 name: AntiLag
+softdepends: Vault,Protocollib
+commands:
+    superban:
+    lagr:

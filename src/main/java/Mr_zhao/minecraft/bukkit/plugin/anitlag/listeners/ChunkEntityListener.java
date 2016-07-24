@@ -28,6 +28,7 @@ public class ChunkEntityListener extends  AnitLagListener{
         if(!entityWhiteList.contains(e.getEntity().getType().getName())){
             e.setCancelled(true);
             return;
+
         }
 
         }

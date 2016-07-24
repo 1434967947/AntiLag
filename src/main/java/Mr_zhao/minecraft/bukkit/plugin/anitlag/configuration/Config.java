@@ -83,8 +83,40 @@ public class Config {
 
         return cfg.getStringList("CleanEntity.EntityWhitelist");
     }
+    public List<String > getOps(){
+        return cfg.getStringList("AnitOp.ops");
+    }
+    public boolean getBan(){
+        return cfg.getBoolean("AnitOp.Superban");
+    }
     public List<String > getChunkUnloadWorld(){
         return cfg.getStringList("Chunk.ChunkWorldList");
+    }
+    public List<String > getSuperBanList(){
+        return cfg.getStringList("SuperBanList");
+    }
+    public void setSuperBanList(List<String> l){
+          cfg.set("SuperBanList",l);
+    }
+    public List<String > getSuperBanIp(){
+        return cfg.getStringList("SuperBanIp");
+    }
+    public void addBanip(String s){
+        List l=getSuperBanIp();
+        if(!(l.contains(s))){
+            l.add(s);
+            setSuperBanIp(l);
+        }
+    }
+    public void addBanList(String s){
+        List l=getSuperBanList();
+      if(!(l.contains(s))){
+          l.add(s);
+          setSuperBanList(l);
+      }
+    }
+    public void setSuperBanIp(List<String> l){
+        cfg.set("SuperBanIpt",l);
     }
     public long getChunkUnloadDelay(){
         return cfg.getInt("Chunk.ChunkGctime")*20;
