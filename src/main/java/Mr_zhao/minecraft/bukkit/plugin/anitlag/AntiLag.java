@@ -41,6 +41,9 @@ cfg=new Config(this);
         plugin=this;
         cmdc=new ArrayList<String>();
         chatc=new ArrayList<String>();
+        if(getConfig().getBoolean("AnitGamemode")){
+            reg(new AntiCreate(this));
+        }
         if(getConfig().getBoolean("AnitOp.enable")){
             b=true;
             runTimer(new CheckOpersThread(this),getConfig().getLong("AnitOp.check")*20);

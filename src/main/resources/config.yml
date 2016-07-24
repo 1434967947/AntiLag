@@ -1,13 +1,18 @@
-Spam:
+Spam: #禁止刷屏
    enable: true
    rude:
-     - "擦"
+     - "擦"   #脏话词
      - "我擦"
      - "群"
      - shit
-   serverformat: [(\w+\.)\w]
-   chatCooldown: 1
-   commandCooldown: 3
+   serverformat: [(\w+\.)\w] #如果语句符合这个表达式判断脏话
+   chatCooldown: 1 #多少秒可以说一次话
+   commandCooldown: 3 #多少秒可以打一次指令
+AnitGamemode: false #是否防御非法创造
+gamemodeban: false #false只是取消创造，true则是封禁
+CreateList:
+     - Mr_zhao # 允许有创造的白名单，需要上面开启才能生效
+     - fuzhu
 SuperBan: true #是否开启超级封禁
 SuperBanList:
    - SB
