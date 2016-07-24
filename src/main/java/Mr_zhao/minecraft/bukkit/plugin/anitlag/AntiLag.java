@@ -26,6 +26,7 @@ public class AntiLag extends JavaPlugin  {
 public static  Config cfg;
     public static HashMap<String,Integer> rob;
     public static RedstoneCleaner red;
+    public static HashMap<String,Integer> mot;
     public static AntiLag plugin;
     private  boolean b=false;
     public static List<String> cmdc;
@@ -36,12 +37,12 @@ public static  Config cfg;
     private void reg(Listener l){
         Bukkit.getPluginManager().registerEvents(l,this);
     }
-    public static void addCount(String ip){
-        if(rob.containsKey(ip)){
-            int i=rob.get(ip)+1;
-            rob.put(ip,i);
+    public static void addCount(String ip,HashMap<String,Integer> m){
+        if(m.containsKey(ip)){
+            int i=m.get(ip)+1;
+            m.put(ip,i);
         }else {
-            rob.put(ip,1);
+           m.put(ip,1);
         }
     }
 
@@ -53,6 +54,13 @@ cfg=new Config(this);
         rob=new HashMap<String, Integer>();
         cmdc=new ArrayList<String>();
         chatc=new ArrayList<String>();
+        if(getConfig().getBoolean("GC")){
+            runTimer(new Runnable() {
+                public void run() {
+                    System.gc();
+                }
+            }, getConfig().getLong("GCtime") * 60);
+        }
         if(getConfig().getBoolean("AntiRobot")){
             reg(new AntiRobot(this));
             runTimer(new Runnable() {
@@ -64,6 +72,21 @@ cfg=new Config(this);
                             continue;
                         }
                         rob.put(s,i-1);
+                    }
+                }
+            },5*20);
+        }
+        if(getConfig().getBoolean("AntiMotdPing")){
+            reg(new AntiRobot(this));
+            runTimer(new Runnable() {
+                public void run() {
+                    for(String s:mot.keySet()){
+                        int i=mot.get(s);
+                        if(i==0){
+                            mot.remove(s);
+                            continue;
+                        }
+                        mot.put(s,i-1);
                     }
                 }
             },5*20);
@@ -139,6 +162,7 @@ cfg=new Config(this);
         saveConfig();
         cmdc=null;
         chatc=null;
+        mot=null;
         rob=null;
         System.gc();
     }
