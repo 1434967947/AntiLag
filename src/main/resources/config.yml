@@ -3,7 +3,7 @@ Portal:
    break: true #如果有人卡在地狱门是否破坏地狱门，如果为false则执行下面的指令
    command: "/spawn"
 GC: true #是否开启内存释放
-GCtime: 3 #单位小时
+GCtime: 1 #单位小时
 Spam: #禁止刷屏
    enable: true
    Similar: true #是否开启相似度比较 这个操作会消耗比较多的资源 不建议开启

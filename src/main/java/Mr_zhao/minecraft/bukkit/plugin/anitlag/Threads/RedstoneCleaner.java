@@ -15,12 +15,10 @@ public class RedstoneCleaner extends  AnitLagThreads{
     private  int clean;
     public RedstoneCleaner(AntiLag plugin) {
         super(plugin);
-        cache=new HashMap<Location,Integer>();
+        cache=AntiLag.cache;
         clean=getCfg().getRedStoneCleanThreshold();
     }
-    public void count(Location loc){
-        cache.put(loc,cache.get(loc)+1);
-    }
+
     @Override
     public void run(){
     if(getCfg().getRedStoneShouldDrop()){

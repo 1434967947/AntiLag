@@ -8,6 +8,9 @@ import Mr_zhao.minecraft.bukkit.plugin.anitlag.bugs.listener.UnlimitItems;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.configuration.Config;
 import Mr_zhao.minecraft.bukkit.plugin.anitlag.listeners.*;
 import org.bukkit.Bukkit;
+import org.bukkit.Chunk;
+import org.bukkit.Location;
+import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
@@ -25,16 +28,13 @@ import java.util.List;
 public class AntiLag extends JavaPlugin  {
 public static  Config cfg;
     public static HashMap<String,Integer> rob;
-    public static RedstoneCleaner red;
     public static HashMap<String,Integer> mot;
+    public static HashMap<Location,Integer> cache;
     public static HashMap<String,String> chatcache;
     public static AntiLag plugin;
     private  boolean b=false;
     public static List<String> cmdc;
     public static List<String> chatc;
-    public static  RedstoneCleaner getRedstoneThread(){
-        return red;
-    }
     private void reg(Listener l){
         Bukkit.getPluginManager().registerEvents(l,this);
     }
@@ -46,11 +46,32 @@ public static  Config cfg;
            m.put(ip,1);
         }
     }
+    private void gc(){
+        cmdc=null;
+        chatc=null;
+        mot=null;
+        rob=null;
+        cache=null;
+        cache=new HashMap<Location, Integer>();
+        chatcache=null;
+        chatcache=new HashMap<String, String>();
+        rob=new HashMap<String, Integer>();
+        cmdc=new ArrayList<String>();
+        mot=new HashMap<String, Integer>();
+        chatc=new ArrayList<String>();
+        for(World w:Bukkit.getWorlds()){
 
+            if(w!=null)
+                for(Chunk c:w.getLoadedChunks()){
+                    c.unload();
+                }
+        }
+    }
     @Override
     public void onEnable(){
     this.saveDefaultConfig();
 cfg=new Config(this);
+        mot=new HashMap<String, Integer>();
         chatcache=new HashMap<String, String>();
         plugin=this;
         rob=new HashMap<String, Integer>();
@@ -62,9 +83,9 @@ cfg=new Config(this);
         if(getConfig().getBoolean("GC")){
             runTimer(new Runnable() {
                 public void run() {
-                    System.gc();
+                    gc();
                 }
-            }, getConfig().getLong("GCtime") * 60);
+            }, getConfig().getLong("GCtime") * 20*60*60);
         }
         if(getConfig().getBoolean("AntiRobot")){
             reg(new AntiRobot(this));
@@ -170,7 +191,7 @@ cfg=new Config(this);
         mot=null;
         rob=null;
         chatcache=null;
-        System.gc();
+
     }
     public void run() {
 

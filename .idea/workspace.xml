@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33175a79-8f6a-4c0b-b48f-0de612b82897" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.class" afterPath="$PROJECT_DIR$/target/classes/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/RedstoneCleaner.java" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/RedstoneCleaner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java" afterPath="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.yml" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config.yml" afterPath="$PROJECT_DIR$/target/classes/config.yml" />
     </list>
     <ignored path="AntiLag.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,12 +28,12 @@
     <favorites_list name="AntiLag" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="-801">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -43,7 +42,7 @@
       <file leaf-file-name="AntiSpam.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
+            <state relative-caret-position="480">
               <caret line="38" column="142" selection-start-line="38" selection-start-column="142" selection-end-line="38" selection-end-column="142" />
               <folding />
             </state>
@@ -53,8 +52,51 @@
       <file leaf-file-name="AntiLag.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
-              <caret line="171" column="23" selection-start-line="171" selection-start-column="23" selection-end-line="171" selection-end-column="23" />
+            <state relative-caret-position="360">
+              <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnitLagThreads.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/AnitLagThreads.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedstoneCleaner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/RedstoneCleaner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlockRedstoneListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <folding>
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChunkUnloadThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/ChunkUnloadThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="25" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -112,7 +154,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/AnitLagThreads.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/ChunkUnloadThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/ClearLagThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/RedstoneCleaner.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/ItemPortal.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/UnlimitItems.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AutoRespawnLIstener.java" />
@@ -128,9 +169,10 @@
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiMotd.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiRobot.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiPortal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/RedstoneCleaner.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
       </list>
     </option>
@@ -177,7 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -506,6 +547,7 @@
       </pane>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -807,7 +849,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,13 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/ChunkUnloadThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/bugs/listener/MinecraftPortal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1066,21 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/RedstoneCleaner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/AnitLagThreads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/CoolDownCounter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiCreate.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1117,14 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/configuration/Config.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
@@ -1136,26 +1151,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="171" column="23" selection-start-line="171" selection-start-column="23" selection-end-line="171" selection-end-column="23" />
+        <state relative-caret-position="480">
+          <caret line="38" column="142" selection-start-line="38" selection-start-column="142" selection-end-line="38" selection-end-column="142" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/AntiSpam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/AnitLagThreads.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="38" column="142" selection-start-line="38" selection-start-column="142" selection-end-line="38" selection-end-column="142" />
+        <state relative-caret-position="240">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/RedstoneCleaner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/listeners/BlockRedstoneListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/Threads/ChunkUnloadThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mr_zhao/minecraft/bukkit/plugin/anitlag/AntiLag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="-801">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
           <folding />
         </state>
       </provider>
