@@ -61,7 +61,7 @@ public static  Config cfg;
         chatc=new ArrayList<String>();
         for(World w:Bukkit.getWorlds()){
 
-            if(w!=null)
+
                 for(Chunk c:w.getLoadedChunks()){
                     c.unload();
                 }
@@ -103,6 +103,7 @@ cfg=new Config(this);
             },5*20);
         }
         if(getConfig().getBoolean("AntiMotdPing")){
+
             reg(new AntiRobot(this));
             runTimer(new Runnable() {
                 public void run() {
@@ -116,6 +117,9 @@ cfg=new Config(this);
                     }
                 }
             },5*20);
+        }
+        if(getConfig().getBoolean("AntiALLYOUWANT")){
+            reg(new AntiEnchant(this));
         }
         if(getConfig().getBoolean("AnitGamemode")){
             reg(new AntiCreate(this));
