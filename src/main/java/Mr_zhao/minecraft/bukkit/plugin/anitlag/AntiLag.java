@@ -102,6 +102,9 @@ cfg=new Config(this);
                 }
             },5*20);
         }
+        if(getConfig().getBoolean("AntiKill")){
+            reg(new AntiKillg(this));
+        }
         if(getConfig().getBoolean("AntiMotdPing")){
 
             reg(new AntiRobot(this));

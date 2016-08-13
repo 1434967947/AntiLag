@@ -4,6 +4,8 @@ Portal:
    command: "/spawn"
 GC: true #是否开启内存释放
 AntiALLYOUWANT: true
+AntiKill: true #是否启用
+kradius: 5 #攻击最大半径
 GCtime: 1 #单位小时
 Spam: #禁止刷屏
    enable: true
